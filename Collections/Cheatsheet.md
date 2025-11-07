@@ -18,3 +18,17 @@
 | Double ended queue | **Dequeue** | *ArrayDequeue* | Allows duplicates, maintains insertion order, no nulls, not thread-safe. Add/Remove at ends: O(1) |
 | | | *LinkedList* | Allows duplicates, maintains insertion order, allows nulls, not thread-safe. Add/Remove at ends: O(1) |
 
+
+## Choosing the right Java interface.
+
+- Need key-value pairs ---->|Yes|----> **MAP**
+  - |No|---> Traversal according to insertion order ---->|Yes| ----> **LIST**
+    - |No| ---> LIFO FIFO, Remove by priority ---->|Yes| ----> **QUEUE**
+      - |No| ---> Duplicate elements present ---->|No| ----> **SET**
+        - |Yes| ----> **LIST**
+
+## Concrete Collection Selection Diagram
+![Collection selection diagram](https://www.baeldung.com/wp-content/uploads/2022/11/Concrete-Collection-Selection-Diagram.png)
+
+
+      
